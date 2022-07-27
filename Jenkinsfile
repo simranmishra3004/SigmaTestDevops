@@ -8,7 +8,7 @@ pipeline
     }
     stages 
     {
-        stage('clone')
+        stage('clone1')
         {
             steps
             {
