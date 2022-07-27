@@ -8,7 +8,7 @@ public class HelloWorldJunit
 	public void helloWorldTest() 
 	{
 		HelloWorld hw =new HelloWorld();
-		String name=hw.isName("Yash");
+		String name=hw.isName("YashK");
 		System.out.println("Hello World "+name+" !!");
 	}
 	
