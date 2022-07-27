@@ -2,7 +2,7 @@ import helloworld.HelloWorld;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class HelloWorldJunit
+public class HelloWorldTest
 {
 	
 	@Test
