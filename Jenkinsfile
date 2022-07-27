@@ -4,7 +4,7 @@ pipeline
     tools
     {
         git 'Default'
-        maven "MAVEN_HOME"
+        maven "Maven 3.8.6"
     }
     stages 
     {
