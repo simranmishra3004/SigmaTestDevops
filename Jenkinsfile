@@ -34,7 +34,7 @@ pipeline
         stage('test'){
             steps {
             sh'''
-                mvn -Dtest=HelloWorldTest test
+                mvn test
             '''
             }
         }    
