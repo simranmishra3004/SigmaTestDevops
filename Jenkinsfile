@@ -17,12 +17,24 @@ pipeline
          
             }
             
-        stage('build'){
-            steps {
+        stage('build')
+        {
+            steps 
+            {
             sh'''
                 mvn clean install
             '''
             }
-        }    
-        }
+        } 
+
+        stage('test')
+        {
+            steps 
+            {
+             sh'''
+                mvn test
+             '''
+            }
+        }       
     }
+}
