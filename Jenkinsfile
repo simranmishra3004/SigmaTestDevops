@@ -4,7 +4,7 @@ pipeline
     tools
     {
         git 'Default'
-        maven "MAVEN_HOME"
+        maven "Maven 3.8.6"
     }
     stages 
     {
@@ -12,29 +12,24 @@ pipeline
         {
             steps
             {
-                    git  'https://github.com/simranmishra3004/SigmaTestDevops.git'
-                }
-         
+                deleteDir()
+                checkout([$class: 'GitSCM', branches: [[name: '*/simranm']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/simranmishra3004/SigmaTestDevops.git']]])
             }
+        }
             
-        stage('build')
-        {
-            steps 
-            {
+        stage('clean'){
+            steps {
             sh'''
-                mvn clean install
+                mvn clean
             '''
             }
-        } 
-
-        stage('test')
-        {
-            steps 
-            {
-             sh'''
-                mvn test
-             '''
+        }    
+        stage('build'){
+            steps {
+            sh'''
+                mvn test install
+            '''
             }
-        }       
+        }    
+        }
     }
-}
