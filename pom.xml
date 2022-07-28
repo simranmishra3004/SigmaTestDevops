@@ -5,14 +5,13 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Helloworld</name>
   
-  <properties>
+    <properties>
         <!-- Project settings -->
         <java.version>11</java.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
- </properties>
- 
- <dependencies>
+    </properties>
+    <dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -20,7 +19,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-  <build>
+    <build>
         <finalName>maven-unit-test</finalName>
         <plugins>
             <plugin>
@@ -37,8 +36,7 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-        </plugins>
-        
+        </plugins>    
     </build>
 
 </project>
