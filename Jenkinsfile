@@ -27,16 +27,16 @@ pipeline
         stage('build'){
             steps {
             sh'''
-                mvn install
+                mvn test install
             '''
             }
         }  
-        stage('test'){
-            steps {
-            sh'''
-                mvn -X test
-            '''
-            }
-        }    
+        //stage('test'){
+        //    steps {
+          //  sh'''
+            //    mvn -X test
+            //'''
+           // }
+        //}    
         }
     }
