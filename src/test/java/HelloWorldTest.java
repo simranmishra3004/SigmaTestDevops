@@ -11,7 +11,7 @@ public class HelloWorldTest
 		HelloWorld hw =new HelloWorld();
 		String name=hw.isName("Yash");
 		System.out.println("Hello World "+name+" !!");
-		assertSame("Yash", name);
+		assertSame("Yash1", name);
 	}
 	
 }
