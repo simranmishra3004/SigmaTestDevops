@@ -12,10 +12,10 @@ pipeline
         {
             steps
             {
-                    git  'https://github.com/simranmishra3004/SigmaTestDevops.git'
-                }
-         
+                deleteDir()
+                checkout([$class: 'GitSCM', branches: [[name: '*/simranm']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/simranmishra3004/SigmaTestDevops.git']]])
             }
+        }
             
         stage('clean'){
             steps {
