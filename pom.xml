@@ -3,7 +3,7 @@
   <groupId>com.sigma.testdevops</groupId>
   <artifactId>helloworld</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>Helloworld</name>
+  <name>Helloworld</name> .
   
   <properties>
         <!-- Project settings -->
